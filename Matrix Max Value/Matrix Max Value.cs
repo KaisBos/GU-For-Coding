@@ -14,7 +14,7 @@ namespace MatrixMaxValue
             Console.Write("Enter the size of column for matrix: ");
                 int sizeColumn = Convert.ToInt32(Console.ReadLine());
 
-            //Decalre matrix (main)
+            //Declare matrix (main)
             double[,] matrix = new double[sizeRow,sizeColumn];            
 
             //Input for matrix
@@ -31,7 +31,7 @@ namespace MatrixMaxValue
             }
 
             //Find Max Value and its position
-            double maxValue = 0;            
+            double maxValue = matrix[0,0];            
             int rowMaxValue = 0, columnMaxValue = 0;
 
             Console.WriteLine("Matrix:");
