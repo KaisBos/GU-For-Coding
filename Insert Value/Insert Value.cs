@@ -25,8 +25,7 @@ namespace InsertValue
             {            
                 //Inserting progress    
                 int insertPosition = positionValue - 1;
-                int startScan = n.Length - 1;
-                bool checkedPosition;            
+                int startScan = n.Length - 1;         
                 for (int i = startScan; i >= insertPosition; i--)
                 {          
                     if (i == insertPosition)
