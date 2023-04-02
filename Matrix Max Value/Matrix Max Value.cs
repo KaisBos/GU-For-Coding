@@ -14,7 +14,7 @@ namespace MatrixMaxValue
             Console.Write("Enter the size of column for matrix: ");
                 int sizeColumn = Convert.ToInt32(Console.ReadLine());
 
-            //Decalre matrix (main)
+            //Declare matrix (main)
             double[,] matrix = new double[sizeRow,sizeColumn];            
 
             //Input for matrix
