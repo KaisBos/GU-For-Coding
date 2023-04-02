@@ -7,8 +7,22 @@ namespace InsertValue
     class InsertValue
     {
         static void Main(string[] args)
-        {             
-            int[] n = {10,4,6,7,8,0,0,0,0,0};      
+        {   
+            //Input size for array          
+            Console.Write("Enter a size for array: ");
+                int size = Convert.ToInt32(Console.ReadLine());
+
+            int[] n = new int[size];
+
+            //Input array's value            
+            Console.WriteLine("Enter values for {0} elements: ",size);
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write("Value {0}: ", (i+1));
+                n[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+
             Console.WriteLine("Enter a value you want to insert: ");
                 int inputValue = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter the position you want to insert your value: ");
@@ -38,6 +52,7 @@ namespace InsertValue
                     }                   
                 }
                 //Print array to screen
+                Console.WriteLine("\nYour inserted result: ");
                 for (int p = 0; p < n.Length; p++)
                 {
                     Console.Write(n[p] + " ");
